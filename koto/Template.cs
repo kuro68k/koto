@@ -51,7 +51,11 @@ namespace koto
 				else if (char.IsWhiteSpace(c))  // cancel dollar count
 				{
 					if (subStartIndex != -1)
+					{
+						string debug = text.Substring(subStartIndex, idx - subStartIndex);
+						output.Remove(output.Length - debug.Length + 1, debug.Length - 1);
 						output.Append(text.Substring(subStartIndex, idx - subStartIndex));
+					}
 					dollarCount = 0;
 					subStartIndex = -1;
 					output.Append(c);
