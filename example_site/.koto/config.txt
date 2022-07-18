@@ -1,0 +1,4 @@
+highlighter_exe = C:\path\to\highlight.exe
+highlighter_theme = Andes
+#highlighter_options = -l -j 3
+#highlighter_css_output = css/code_highlight.css

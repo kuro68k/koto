@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "koto": {
+      "commandName": "Project",
+      "commandLineArgs": "d:/site/notes"
+    }
+  }
+}
